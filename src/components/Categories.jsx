@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import useFetch from "../utils/useFetch";
 import { Link } from "react-router-dom";
-
+import { PRODUCTS_URL } from "../utils/constant";
 const Categories = () => {
-  const { data: categoryData, error, loading } = useFetch("https://dummyjson.com/products");
+  const { data: categoryData, error, loading } = useFetch(PRODUCTS_URL);
   const [filteredCategory, setFilteredCategory] = useState([]);
 
   useEffect(() => {
     if (categoryData?.products?.length > 0) {
-      // Use reduce to create an object with unique categories
+    
       const categoryFilter = categoryData.products.reduce((acc, curr) => {
         if (!acc[curr.category]) {
           acc[curr.category] = { slug: curr.category, image: curr.thumbnail };
@@ -16,7 +16,6 @@ const Categories = () => {
         return acc;
       }, {});
 
-      // Convert the object into an array using Object.values()
       const filteredData = Object.values(categoryFilter);
       setFilteredCategory(filteredData);
     }
