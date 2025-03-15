@@ -1,12 +1,30 @@
-# React + Vite
+ShopCart - E-commerce App
+Welcome to ShopCart, an e-commerce web app built with React, Redux Toolkit, and Tailwind CSS. ShopCart allows users to browse, filter, and purchase products while managing their cart and wishlist.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Product Catalog: Browse products, filter by category, rating, and price.
+Cart Management: Add items, modify quantities, and view the total cost.
+Wishlist: Save favorite items for later.
+Search: Search for products by name.
+Responsive Design: Mobile-friendly with Tailwind CSS.
+Checkout: UI-only purchase completion (no backend).
+Technologies Used
+React: JavaScript library for building user interfaces.
+Redux Toolkit: State management tool for handling app state.
+Tailwind CSS: Utility-first CSS framework.
+React Router: Routing library for navigation.
+Vite: Fast build tool for development.
+Installation
+Clone the repository:
 
-Currently, two official plugins are available:
+git clone https://github.com/vinayachowdary1/ecommerce-app.git
+Navigate to the project directory:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+cd ecommerce-app
+Install dependencies:
 
-## Expanding the ESLint configuration
+npm install
+Run the app:
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+npm run dev
+Visit http://localhost:3000 to view the app in your browser.
