@@ -8,7 +8,6 @@ Welcome to **ShopCart**, an e-commerce web app built with React, Redux Toolkit, 
 - **Cart Management**: Add items, modify quantities, and view the total cost.
 - **Wishlist**: Save favorite items for later.
 - **Search**: Search for products by name.
-- **Responsive Design**: Mobile-friendly with Tailwind CSS.
 - **Checkout**: UI-only purchase completion (no backend).
 
 ## Technologies Used
